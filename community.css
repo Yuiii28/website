@@ -1,0 +1,381 @@
+body{
+    background-color: #0f1822;
+}
+
+header{
+    /*position: relative;
+    left: 100px;
+    top: 100px;*/
+    background-color: #0f1822 ;
+    padding: 20px 0;
+    text-align: left;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+header h1{
+    color: white;
+    border: 8px solid white;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 36px;
+    font-family: "Valorant";
+  }
+
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+}
+
+.clip{
+  text-align: center;
+  color: white;
+  font-family: "Valorant";
+  font-size: 70px;
+}
+
+.skilllist{
+  line-height: 2em;
+    color: white;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner img{
+    max-width: 100%;
+}
+
+.banner .welcome{
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+    color: white;
+    padding: 30px;
+    background-color: #ff4654;
+    font-size: 60px;
+    border-radius: 16px;
+}
+
+.banner h2{
+    font-size: 22px;
+    font-family: "Valorant";
+}
+
+.banner .welcome span{
+    font-size: 1.4em;
+}
+
+/*nav{
+    background-color: #0f1822;
+    padding: 20px;
+    position: sticky;
+    top: 100px;
+    z-index: 1;
+}*/
+
+nav li{
+    display: inline-block;
+    width: 20%;
+}
+
+.space{
+  width: 5%;
+}
+
+
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; 
+    max-height: 115px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav li a.join {
+    color: white;
+}
+
+main {
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+article h2{
+    color: white ;
+    font-size: 48px;
+    font-family: "Valorant";
+}
+article p{
+    line-height: 2em;
+    color: white;
+}
+
+p{
+    font-size: 18px;
+}
+
+.images{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+
+.images li{
+    display: inline-block;
+    list-style-type: none;
+    width: 40%;
+    margin: 20px 5%;
+    position: relative;
+}
+
+.images li img{
+    max-width: 100%;
+}
+
+section.join{
+    background-color: #ff4654;
+    text-align: center;
+    padding: 60px 20px;
+    color: #1b1c2a;
+    border-radius: 35px;
+}
+
+section.join h2{
+    font-size: 36px;
+    font-family: "Valorant";
+}
+
+form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border: 4px solid white;
+    border-radius: 28px;
+    
+}
+
+footer{
+    background-color: #0f1822;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: "Valorant";
+}
+
+@font-face {
+    font-family: "Valorant";
+    src: url("Valorant.otf");
+  }
+  
+  .btn {
+    /* Clean style */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    color: var(--button-text-color);
+    cursor: pointer;
+    /* Clean style */
+    
+    --button-text-color: var(--background-color);
+    --button-text-color-hover: var(--button-background-color);
+    --border-color: #7D8082;
+    --button-background-color: #ece8e1;
+    --highlight-color: #ff4655;
+    --button-inner-border-color: transparent;
+    --button-bits-color: var(--background-color);
+    --button-bits-color-hover: var(--button-background-color);
+    
+    position:sticky;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Valorant";
+    transition: all .15s ease;
+    color: black;
+  }
+  
+  .btn::before,
+  .btn::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0; left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid var(--border-color);
+    transition: all .15s ease;
+  }
+  
+  .btn::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .btn::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .btn:active,
+  .btn:focus {
+    outline: none;
+  }
+  
+  .btn:active::before,
+  .btn:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .btn:active::before {
+    top: 3px;
+  }
+  
+  .btn:active::after {
+    bottom: 3px;
+  }
+  
+  .btn__inner {
+    position: relative;
+    display: block;
+    padding: 20px 30px;
+    background-color: var(--button-background-color);
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px var(--button-inner-border-color);
+  }
+  
+  .btn__inner::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: var(--button-bits-color);
+  }
+  
+  .btn__inner::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0; bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: var(--button-bits-color);
+    transition: all .2s ease;
+  }
+  
+  .btn__slide {
+    display: block;
+    position: absolute;
+    top: 0; bottom: -1px; left: -8px;
+    width: 0;
+    background-color: var(--highlight-color);
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .btn__content {
+    position: relative;
+  }
+  
+  .btn:hover {
+    color: var(--button-text-color-hover);
+  }
+  
+  .btn:hover .btn__slide {
+    width: calc(100% + 15px);
+  }
+  
+  .btn:hover .btn__inner::after {
+    background-color: var(--button-bits-color-hover);
+  }
+  
+  .btn--light {
+    --button-background-color: var(--background-color);
+    --button-text-color: var(--highlight-color);
+    --button-inner-border-color: var(--highlight-color);
+    --button-text-color-hover: #ece8e1;
+    --button-bits-color-hover: #ece8e1;
+  }
+
+.images li:hover{
+position: relative;
+top: -4px;
+}
+
+form input:focus{
+  border: 4px solid #0f1822;
+  outline: none;
+}
+
+form input:valid{
+  border: 4px solid green;
+}
+
+article p::first-letter{
+  font-family: "Valorant";
+  font-size: 30px;
+}
+
+
+h1::selection{
+  color: white;
+  background:#0f1822 ;
+}
+::selection {
+  color: white;
+  background: #ff4654;
+}
+
+.outline {
+  flex: 0 0 auto; /* Let the button grow and shrink as needed */
+}
+
+@media screen and (max-width:1900px){
+  .banner .welcome{
+    font-size: 60px;
+  }
+  .label-text{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width:700px){
+  .banner .welcome{
+    position: relative;
+    text-align: center;
+  }
+  .banner .welcome br{
+    display: none;
+  }
+  .outline{
+    text-align: center;
+  }
+  .label-text{
+    font-size: 10px;
+    text-align: center;
+  }
+  .images li{
+ width: 100%;
+ margin:20px auto;
+ display: block;
+  }
+}

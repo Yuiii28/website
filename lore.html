@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="lore.css">
+    <title>Valoranthings</title>
+    <link rel="icon" href="images/valoicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/valoicon.png" type="image/x-icon">
+    <link rel="icon" href="images/valoicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/valoicon.png" sizes="128x128" type="image/png">
+</head>
+<body>
+    <audio autoplay loop id="myaudio">
+      <source src="music/lobbytheme.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+    <script>
+      const audio = document.getElementById('myaudio');
+      audio.volume = 0.25;
+    </script>
+    <audio id="hover1" src="music/hover.mp3"></audio>
+    <audio id="hover2" src="music/hover.mp3"></audio>
+    <audio id="hover3" src="music/hover.mp3"></audio>
+    <audio id="hover4" src="music/hover.mp3"></audio>
+    
+    <header>
+      <nav class="main-nav">
+        <ul>
+            <h1>Valoranters</h1>
+            <li class="space"></li>
+
+                <!--<button onmouseover="document.getElementById('hover1').play()" class="outline" type="button">
+                <a href="about.html">
+                <div class="label">
+                  <span class="hover-effect"></span>
+                  <span class="label-text">About</span>
+                </div>
+                </a>
+              </button>--><a href="index.html">
+              <button class="btn" onmouseover="document.getElementById('hover1').play()">
+                
+                <span class="btn__inner">
+                  <span class="btn__slide"></span>
+                  <span class="btn__content">About</span>
+                </span>
+              </button>
+            </a>
+
+
+              <a href="lore.html">
+              <button class="btn" onmouseover="document.getElementById('hover2').play()">
+                
+                <span class="btn__inner">
+                  <span class="btn__slide"></span>
+                  <span class="btn__content">Lore</span>
+                </span>
+              </button>
+            </a>
+
+
+              <a href="roles.html">
+              <button class="btn" onmouseover="document.getElementById('hover3').play()">
+                <span class="btn__inner">
+                  <span class="btn__slide"></span>
+                  <span class="btn__content">Roles</span>
+                </span>
+              </button>
+            </a>
+
+              <a href="community.html">
+              <button class="btn" onmouseover="document.getElementById('hover4').play()">
+                
+                <span class="btn__inner">
+                  <span class="btn__slide"></span>
+                  <span class="btn__content">Community</span>
+                </span>
+              </button>
+            </a>
+          </span>
+        </ul>
+    </nav>
+    </header>
+    <br>
+    <section class="banner">
+      <!-- Slideshow container -->
+<div class="slideshow-container">
+
+<!-- Full-width images with number and caption text -->
+<div class="mySlides fade">
+  <img src="images/lorebanner1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/lorebanner2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/lorebanner3.jpg" style="width:100%">
+</div>
+
+<!-- The dots/circles -->
+<div style="text-align:center" class="hide-dots">
+<span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+</div>
+  </section>
+    <main>
+      <article>
+        <h2>Backstory</h2>
+        <hr>
+        <h1>Brimstone</h1>
+        <div class="container">
+          <audio id="brim" src="music/brim.mp3"></audio>
+            <img src="images/brim.jpg" onmouseover="document.getElementById('brim').play()" class="agent">
+        </div>
+        <p>Before entering the <span class="custom">VALORANT</span> Protocol, Brimstone used to work various military-type jobs, such as being a 
+          firefighter in BFD (Baltimore Fire Department), working at Engine 8, and even taking part in the Special 
+          Forces. As the commander he is now, it seems like he used to lead a Special Forces group called Ragged Ravens 
+          with his Vandal. This is where Brimstone’s friend comes into play. The images of Brimstone always being with a 
+          friend in his office pictures show he used to have close bonds with a childhood friend throughout his life. In 
+          his dossier, we learn this missing friend’s name: Tariq Porter. Tariq seems to have probably died on 
+          the battlefield with Brimstone, and in Brimstone’s agent player card in the game, we can see him carrying his 
+          buddy Tariq. The dossier goes further to mention how Brimstone broke Tariq’s death to Sumaira, probably Tariq’s 
+          wife.</p>
+            <p>Hover/Hold to hear sample voice line: "I'll teach them to respect their elders"</p>
+        <div class="clear"></div> <!-- Add a clearing element to prevent layout issues -->
+        <hr>
+        <h1>Viper</h1>
+        <div class="container">
+          <audio id="viper" src="music/viper.mp3"></audio>
+            <img src="images/viper.jpg" onmouseover="document.getElementById('viper').play()" class="agent">
+        </div>
+        <p>Before becoming a <span class="custom">VALORANT</span> agent, Viper was a compassionate chemist who researched Radianite and Radiants 
+          while potentially working for the Kingdom Corporation. A traumatic event stripped her of everything, 
+          resulting in a dramatic shift in her personality, turning her into a sadistic and vengeful individual. 
+          She harnessed her knowledge to create deadly chemical devices, seeking revenge on those she blames for 
+          her past suffering, particularly the Earth 2 attackers. Now, as a <span class="custom">VALORANT</span> agent, Viper relishes in missions, 
+          protecting her home, and inflicting suffering on her opponents, driven by her desire for vengeance and the 
+          enjoyment of their pain.</p>
+            <p>Hover/Hold to hear sample voice line: "Look them in the eyes when you kill them."</p>
+        <div class="clear"></div> <!-- Add a clearing element to prevent layout issues -->
+        <hr>
+        <h1>Omen</h1>
+        <div class="container">
+          <audio id="omen" src="music/omen.mp3"></audio>
+            <img src="images/omen.jpg" onmouseover="document.getElementById('omen').play()" class="agent">
+        </div>
+        <p>Omen is a phantom of a man with mysterious origins and many names. He has a limited memory of his past, though 
+          he does remember being involved in something that caused him to be ripped apart and killed. All he knows that 
+          links to who he used to be is a place known as Point Light, a past friendship with Sabine "Viper" Callas, and 
+          feelings of restoration with every kill he makes. Contributing to the formation of the <span class="custom">VALORANT</span> Protocol, Omen 
+          would go on to become its third recruit and serve as one of its more experienced agents, all while he continues 
+          his search for answers about what truly happened to him over a decade ago.</p>
+            <p>Hover/Hold to hear sample voice line: "If I must live in this nightmare, my enemies might as well join me."</p>
+        <div class="clear"></div> <!-- Add a clearing element to prevent layout issues -->
+        <hr>
+        <h1>Cypher</h1>
+        <div class="container">
+          <audio id="cypher" src="music/cypher.mp3"></audio>
+            <img src="images/cypher.jpg" onmouseover="document.getElementById('cypher').play()" class="agent">
+        </div>
+        <p>
+          Amir El Amari, known as "Cypher," hails from Rabat, Morocco, where he experienced poverty and harbored resentment 
+          towards the resource-draining activities of the Kingdom Corporation in his city. As an information broker, he's an 
+          expert at gathering intel but is incredibly secretive, guarding his own secrets and identity zealously. To 
+          maintain anonymity, he's established multiple safehouses and consistently conceals his face with a black mask. 
+          Even after joining the <span class="custom">VALORANT</span> Protocol, Cypher refuses to reveal his true identity, believing that no 
+          information is worth the risk of unmasking himself, not even to those closest to him.</p>
+            <p>Hover/Hold to hear sample voice line: "I must survive to protect my family. I can't lose them. I can't feel that pain again."</p>
+        <div class="clear"></div> <!-- Add a clearing element to prevent layout issues -->
+        <hr>
+        <h1>Sova</h1>
+        <div class="container">
+          <audio id="sova" src="music/sova.mp3"></audio>
+            <img src="images/sova.png" onmouseover="document.getElementById('sova').play()" class="agent">
+        </div>
+        <p>Hailing from the town of Severomorsk, in Murmansk Oblast, Russia, Sasha Novikov (Russian: Саша Новиков) is an 
+          archer who became an agent for the <span class="custom">VALORANT</span> Protocol as its sixth recruit, "Sova". With his right eye replaced 
+          with a mechanical one after he lost it, Sova primarily serves as the team's scout, gathering information and 
+          searching for targets using olden methods should technology come up short. Being highly capable and reliable 
+          both in the field and with his work, whilst also having experience with multiple radianite-related events 
+          (having traveled through a rift and having met his Omega counterpart), Sova has earned a reputation of being 
+          one of the Protocol's most trusted agents, especially to the organization's commander, Brimstone.</p>
+            <p>Hover/Hold to hear sample voice line: "If you're not a good shot today, don't worry. There are other ways to be useful."</p>
+        <div class="clear"></div> <!-- Add a clearing element to prevent layout issues -->
+        <hr>
+        <h1>Sage</h1>
+        <div class="container">
+          <audio id="sage" src="music/sage.mp3"></audio>
+            <img src="images/sage.jpg" onmouseover="document.getElementById('sage').play()" class="agent">
+        </div>
+        <p>Wei Ling Ying is a radiant monk coming from China. Going on to become an agent for the 
+          <span class="custom">VALORANT</span> Protocol as its seventh recruit, "Sage", Wei was able to work her way quickly up the ranks, with the 
+          Protocol's superiors identifying natural leadership qualities in her. Sage is currently active in <span class="custom">VALORANT</span>'s 
+          radiant agent recruitment and training, interacting with multiple new radiants upon recruitment and taking the 
+          lead on its radiant training program.She possesses unique abilities related to the manipulation of Radiant energy, 
+          a mysterious force within the <span class="custom">VALORANT</span> universe that grants individuals extraordinary powers. Sage's abilities 
+          focus on healing and battlefield control.</p>
+            <p>Hover/Hold to hear sample voice line: "My power does not ebb. Ask for aid, and you shall receive."</p>
+        <div class="clear"></div> <!-- Add a clearing element to prevent layout issues -->
+        <hr>
+        <h1>Phoenix</h1>
+        <div class="container">
+          <audio id="phoenix" src="music/phoenix.mp3"></audio>
+            <img src="images/phoenix.png" onmouseover="document.getElementById('phoenix').play()" class="agent">
+        </div>
+        <p>Jamie Adeyemi is a radiant hailing from the Peckham district in London, England. Growing up, Adeyemi attended a 
+          Performing Arts school in the area but was later suspended. Recruited into the <span class="custom">VALORANT</span> Protocol as its ninth 
+          agent, "Phoenix", Adeyemi was heavily involved with the Protocol's activities from 10 AFL onwards. With much 
+          information kept from him as need-to-know as a recent recruit, he was unable to prevent a spike detonation in 
+          Venice whilst on a solo mission. Phoenix was given another opportunity to stop one the next day when another 
+          attack occurred in Rabat, and it was here that he first came face-to-face with the sole perpetrator, his own 
+          Omega counterpart. Frustrated with how much was being kept in the dark, despite going on to prevent the 
+          detonation this time with the help of a team, Phoenix was finally filled in on the threat posed by Omega Earth.</p>
+            <p>Hover/Hold to hear sample voice line: "When I'm done, they'll be nothing more than ash."</p>
+        <div class="clear"></div> <!-- Add a clearing element to prevent layout issues -->
+        <hr>
+        <h1>Jett</h1>
+        <div class="container">
+          <audio id="jett" src="music/jett.mp3"></audio>
+            <img src="images/jett.jpg" onmouseover="document.getElementById('jett').play()" class="agent">
+        </div>
+        <p>Han Sunwoo, known as "Jett," originates from South Korea and had a previous life as a chef. An incident involving 
+          her radiant powers, causing a destructive storm at her restaurant, forced her to flee. Later recruited as the 
+          tenth agent by the <span class="custom">VALORANT</span> Protocol, Jett found herself falsely implicated in a destructive mission in Venice, 
+          despite her innocence. Authorities pursued her, believing she posed a threat, leaving her unable to explain the 
+          truth to those who knew her outside <span class="custom">VALORANT</span>. It was later revealed that her doppelgänger, a mirror version from 
+          another Earth, was responsible, exonerating Jett of wrongdoing. However, constrained by Protocol secrecy and the 
+          public's lack of understanding about alternate realities, she remains perceived as a dangerous radiant by the rest 
+          of the world.</p>
+            <p>Hover/Hold to hear sample voice line: "Think you can keep up? Who am I kidding? You know you can't keep up."</p>
+        <div class="clear"></div> <!-- Add a clearing element to prevent layout issues -->
+        <hr>
+        <h1>Raze</h1>
+        <div class="container">
+          <audio id="raze" src="music/raze.mp3"></audio>
+            <img src="images/raze.jpg" onmouseover="document.getElementById('raze').play()" class="agent">
+        </div>
+        <p>Tayane Alves is an engineer coming from Salvador, Bahia, Brazil, with a strong enthusiasm for explosives and 
+          paint - usually combined. Holding strong objections towards Kingdom Corporation's operations in Bahia, Alves was 
+          involved in driving the company out of her home state and forcing them to abandon their sites there, the marks of 
+          her tools staining the plots as a testament to her victories. Hired since then to work for the <span class="custom">VALORANT</span> Protocol 
+          as its twelfth agent, "Raze", Alves now sows her chaos against bigger threats to Earth. However, as the paint 
+          fades from Salvador's walls, Raze cannot afford to leave her home completely behind, lest Kingdom look to make 
+          its return there.</p>
+            <p>Hover/Hold to hear sample voice line: "Paint? Check. Charges? Check. Brakes? *chuckles* Nowhere in sight."</p>
+        <div class="clear"></div> <!-- Add a clearing element to prevent layout issues -->
+        <hr>
+        <h1>Breach</h1>
+        <div class="container">
+          <audio id="breach" src="music/breach.mp3"></audio>
+            <img src="images/breach.jpg" onmouseover="document.getElementById('breach').play()" class="agent">
+        </div>
+        <p>Erik Torsten, a criminal from Sweden, once faced conviction along with his family but received a lenient 
+          sentence due to his double congenital amputation. This allowed him to resume criminal activities, building 
+          mechanical arms for himself. His notorious criminal endeavors eventually forced him into exile, where he crossed 
+          paths with Brazilian Tayane Alves, who upgraded his arms significantly. When approached to become a <span class="custom">VALORANT</span> agent,
+           Torsten accepted the offer, leaving his criminal life behind and becoming "Breach," the Protocol's thirteenth 
+           agent. Despite his more dignified actions, the consequences of his criminal past continue to haunt him, 
+           rendering him unable to return home despite his newfound role as a <span class="custom">VALORANT</span> agent.</p>
+            <p>Hover/Hold to hear sample voice line: "Nothing fancy, uh? We go in, we crush them, we get out."</p>
+        <div class="clear"></div> <!-- Add a clearing element to prevent layout issues -->
+        <hr>
+    </article>
+    <br>
+    <section class="join">
+        <h2>Get Recruited Now!</h2>
+        <p>We could use some help in saving earth.</p>
+        <form>
+            <input type="email" name="email" placeholder="Type email & hit enter" required>
+        </form>
+    </section>
+    </main>
+    <footer>
+        <p class="copyright">Copyright 2023 Valoranters</p>
+    </footer>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 5000); // Change image every 2 seconds
+      }
+    </script>
+</body>
+</html>

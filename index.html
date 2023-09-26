@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="about.css">
+    <title>Valoranthings</title>
+    <link rel="icon" href="images/valoicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/valoicon.png" type="image/x-icon">
+    <link rel="icon" href="images/valoicon.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="images/valoicon.png" sizes="128x128" type="image/png">
+</head>
+<body>
+    <audio autoplay loop id="myaudio">
+      <source src="music/lobbytheme.mp3" type="audio/mpeg">
+      Your browser does not support the audio tag.
+    </audio>
+    <script>
+      const audio = document.getElementById('myaudio');
+      audio.volume = 0.25;
+    </script>
+    <audio id="hover1" src="music/hover.mp3"></audio>
+    <audio id="hover2" src="music/hover.mp3"></audio>
+    <audio id="hover3" src="music/hover.mp3"></audio>
+    <audio id="hover4" src="music/hover.mp3"></audio>
+      
+    
+
+    <header>
+      <nav class="main-nav">
+        <ul>
+            <h1>Valoranters</h1>
+            <li class="space"></li>
+
+                <!--<button onmouseover="document.getElementById('hover1').play()" class="outline" type="button">
+                <a href="about.html">
+                <div class="label">
+                  <span class="hover-effect"></span>
+                  <span class="label-text">About</span>
+                </div>
+                </a>
+              </button>--><a href="index.html">
+              <button class="btn" onmouseover="document.getElementById('hover1').play()">
+                
+                <span class="btn__inner">
+                  <span class="btn__slide"></span>
+                  <span class="btn__content">About</span>
+                </span>
+              </button>
+            </a>
+
+
+              <a href="lore.html">
+              <button class="btn" onmouseover="document.getElementById('hover2').play()">
+                
+                <span class="btn__inner">
+                  <span class="btn__slide"></span>
+                  <span class="btn__content">Lore</span>
+                </span>
+              </button>
+            </a>
+
+
+              <a href="roles.html">
+              <button class="btn" onmouseover="document.getElementById('hover3').play()">
+                <span class="btn__inner">
+                  <span class="btn__slide"></span>
+                  <span class="btn__content">Roles</span>
+                </span>
+              </button>
+            </a>
+
+              <a href="community.html">
+              <button class="btn" onmouseover="document.getElementById('hover4').play()">
+                
+                <span class="btn__inner">
+                  <span class="btn__slide"></span>
+                  <span class="btn__content">Community</span>
+                </span>
+              </button>
+            </a>
+          </span>
+        </ul>
+    </nav>
+    </header>
+    <section class="banner">
+        <img src="images/valorantlogo.gif" alt="Valorant Banner">
+        <!--
+        <div class="welcome">
+            <h2>We are VALORANT,<br><span>We are FIGHTERS.</span></h2>
+        </div>
+        -->
+    </section>
+    
+    <main>
+    <article>
+        <h2>About</h2>
+        <p>Valorant is a popular tactical first-person shooter (FPS) game developed and published by Riot Games, 
+          the same company behind the highly successful League of Legends. Valorant was officially released on June 2, 
+          2020, and it quickly gained a large and dedicated player base. Valorant is primarily a 5v5 team-based game. Two 
+          teams, Attackers and Defenders, compete against each other in a series of rounds on various maps. The game focuses 
+          on strategy, coordination, and precise aiming skills. The primary objective varies based on your team's role:</p>  
+          <ul class="images">
+            <li><img src="images/thumb1.gif" alt="valoranthings thumb 1"></li>
+            <li><img src="images/thumb2.gif" alt="valoranthings thumb 2"></li>
+          </ul>
+        <h2>Gameplay and Objectives</h2>
+        <p>Valorant is a tactical FPS that revolves around two teams of five players each. The game is typically played in 
+          a series of rounds, with one team taking on the role of Attackers and the other as Defenders. The primary 
+          objective for the Attackers is to plant the Spike (a device) at a designated bomb site, while the Defenders 
+          aim to prevent this by either eliminating the Attackers or defusing the Spike if it's planted.</p>
+          <ul class="images">
+            <li><img src="images/planting.gif" alt="valoranthings thumb 1"></li>
+            <li><img src="images/defusing.gif" alt="valoranthings thumb 2"></li>
+          </ul>
+          <h2>Agents and Abilities</h2>
+          <p>One of Valorant's defining features is its roster of Agents, each with a unique set of abilities. These abilities are divided into four 
+            categories:</p>
+            <ul class="skilllist">
+              <li><strong>Basic Abilities (C, Q, E):</strong>  These are utility abilities that can be purchased at the beginning of each round using in-game currency. 
+                They often provide tactical advantages, such as smokescreens, healing, reconnaissance tools, or area denial.</li>
+              <li><strong>Signature Ability (F):</strong> This ability is unique to each Agent and doesn't require purchase. It is often a core aspect of an Agent's 
+                playstyle.</li>
+              <li><strong>Ultimate Ability (X):</strong> The Ultimate Ability is the most powerful ability an Agent possesses. It charges over time and with kills and 
+                can have game-changing effects.</li>
+            </ul>
+          <p>The combination of gunplay and Agent abilities adds strategic depth to Valorant, as teams need to coordinate their Agent selections 
+            and abilities to maximize their chances of victory.</p>
+          <ul class="images">
+            <li><img src="images/kayoult.gif" alt="valoranthings thumb 1"></li>
+            <li><img src="images/astrault.gif" alt="valoranthings thumb 2"></li>
+          </ul>
+    </article>
+    <section class="join">
+        <h2>Get Recruited Now!</h2>
+        <p>We could use some help in saving earth.</p>
+        <form>
+            <input type="email" name="email" placeholder="Type email & hit enter" required>
+        </form>
+    </section>
+    </main>
+    <footer>
+        <p class="copyright">Copyright 2023 Valoranters</p>
+    </footer>
+</body>
+</html>
