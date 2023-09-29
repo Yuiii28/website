@@ -171,7 +171,9 @@ footer{
 
 @font-face {
     font-family: "Valorant";
-    src: url("Valorant.ttf");
+    src: url("Valorant.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
   }
   
 /*  @font-face {
