@@ -175,8 +175,13 @@ footer{
 
 @font-face {
     font-family: "Valorant";
-    src: url("Valorant.otf");
-  }
+    src: url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.eot");
+    src: url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/e7322a6673613ab13604fadda3d20e56.svg#VALORANT")format("svg");
+}
   
   .btn {
     /* Clean style */
